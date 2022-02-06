@@ -1,0 +1,38 @@
+lambda:
+  kind: AWS/Lambda
+  item:
+    - ConcurrentExecutions
+    - Duration
+    - Errors
+    - Invocations
+    - Throttles
+    - UnreservedConcurrentExecutions
+  identifer: Resource
+rds:
+  kind: AWS/RDS
+  item:
+    - CPUUtilization
+    - BinLogDiskUsage
+    - WriteThroughput
+    - ReadIOPS
+    - FreeStorageSpace
+    - CPUCreditBalance
+    - CPUSurplusCreditBalance
+    - ReadLatency
+    - BurstBalance
+    - LVMReadIOPS
+    - EBSIOBalance%
+    - FreeableMemory
+    - LVMWriteIOPS
+    - ReadThroughput
+    - DiskQueueDepth
+    - DatabaseConnections
+    - NetworkTransmitThroughput
+    - WriteLatency
+    - CPUSurplusCreditsCharged
+    - CPUCreditUsage
+    - SwapUsage
+    - NetworkReceiveThroughput
+    - WriteIOPS
+    - EBSByteBalance%
+  identifer: DBInstanceIdentifier
