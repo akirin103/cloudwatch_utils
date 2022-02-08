@@ -2,7 +2,7 @@
 
 ### 使用方法
 ### Cloudwatchダッシュボード作成する
-1. 環境変数を設定してください。
+1. `scripts/dashboard.sh`で環境変数を設定してください。
 
     |  環境変数  |  説明  |
     | ---- | ---- |
@@ -29,6 +29,24 @@
     | lambda | AWS Lambdaの監視用 |
     | rds-mysql | AWS RDSのmysql監視用 |
     | rds-postgresql | AWS RDSのpostgresql監視用 |
+
+<br />
+
+### RDSのアラームの設定をする
+1. AWS管理コンソールからSNSトピックを作成してください。
+
+2. `scripts/metric_alerm_rds.sh`で変数に値を設定してください。
+
+    |  変数名  |  説明  |
+    | ---- | ---- |
+    | topic_arn | アラーム発火時の通知SNSトピック |
+    | target_resource | アラームを設定するRDSインスタンス名 |
+    | profile | 使用するプロファイル名 |
+
+3. 下記のコマンドを実行してください。
+    ```sh
+    sh scripts/metric_alerm_rds.sh
+    ```
 
 <br />
 
