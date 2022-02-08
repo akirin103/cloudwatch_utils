@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# 使用しない環境変数はコメントアウトしてください。
+
 # Cloudwatchダッシュボードで監視する対象のリソース名。(必須)
 export TARGET_RESOURCE_NAME=
 
@@ -10,7 +12,7 @@ export TARGET_RESOURCE_TYPE=
 export DASHBOARD_NAME=
 
 # Cloudwatchダッシュボードで監視する対象のリソースのリージョン。定義しない場合のデフォルト値はap-northeast-1です。
-# export TARGET_RESOURCE_REGION=
+export TARGET_RESOURCE_REGION=
 
 # 使用するプロファイル名。定義しない場合のデフォルト値はdefaultです。
 export PROFILE=

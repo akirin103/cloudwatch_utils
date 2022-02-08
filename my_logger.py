@@ -1,4 +1,4 @@
-from logging import Formatter, StreamHandler, getLogger, DEBUG
+from logging import Formatter, StreamHandler, getLogger, INFO
 
 
 def root_logger():
@@ -17,6 +17,6 @@ def root_logger():
     # loggerにhandlerを設定、イベント捕捉のためのレベルを設定
     logger.addHandler(handler)
     # log levelを設定
-    logger.setLevel(DEBUG)
+    logger.setLevel(INFO)
 
     return logger
