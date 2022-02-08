@@ -35,7 +35,7 @@
 ### RDSのアラームの設定をする
 1. AWS管理コンソールからSNSトピックを作成してください。
 
-2. `scripts/metric_alerm_rds.sh`で変数に値を設定してください。
+2. `scripts/metric_alarm_rds.sh`で変数に値を設定してください。
 
     |  変数名  |  説明  |
     | ---- | ---- |
@@ -45,7 +45,7 @@
 
 3. 下記のコマンドを実行してください。
     ```sh
-    sh scripts/metric_alerm_rds.sh
+    sh scripts/metric_alarm_rds.sh
     ```
 
 <br />
