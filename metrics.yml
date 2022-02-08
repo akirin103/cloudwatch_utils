@@ -8,7 +8,7 @@ lambda:
     - Throttles
     - UnreservedConcurrentExecutions
   identifer: Resource
-rds:
+rds-mysql:
   kind: AWS/RDS
   item:
     - CPUUtilization
@@ -35,4 +35,37 @@ rds:
     - NetworkReceiveThroughput
     - WriteIOPS
     - EBSByteBalance%
+  identifer: DBInstanceIdentifier
+rds-postgresql:
+  kind: AWS/RDS
+  item: 
+    - CPUUtilization
+    - FreeableMemory
+    - FreeStorageSpace
+    - BurstBalance
+    - CPUCreditBalance
+    - CPUCreditUsage
+    - CPUSurplusCreditBalance
+    - CPUSurplusCreditsCharged
+    - DatabaseConnections
+    - DBLoad
+    - DBLoadCPU
+    - DBLoadNonCPU
+    - DiskQueueDepth
+    - EBSByteBalance%
+    - EBSIOBalance%
+    - MaximumUsedTransactionIDs
+    - NetworkReceiveThroughput
+    - NetworkTransmitThroughput
+    - OldestReplicationSlotLag
+    - ReadIOPS
+    - ReadLatency
+    - ReadThroughput
+    - ReplicationSlotDiskUsage
+    - SwapUsage
+    - TransactionLogsDiskUsage
+    - TransactionLogsGeneration
+    - WriteIOPS
+    - WriteLatency
+    - WriteThroughput
   identifer: DBInstanceIdentifier

@@ -7,7 +7,7 @@
     |  環境変数  |  説明  |
     | ---- | ---- |
     |  TARGET_RESOURCE_NAME  |  Cloudwatchダッシュボードで監視する対象のリソース名。  |
-    |  TARGET_RESOURCE_TYPE  |  Cloudwatchダッシュボードで監視する対象のリソースタイプ。有効な値は、lambda、rdsです。metrics.ymlのキーと対応しています。  |
+    |  TARGET_RESOURCE_TYPE  |  Cloudwatchダッシュボードで監視する対象のリソースタイプ。有効な値は「4.参考」を確認してください。metrics.ymlのキーと対応しています。  |
     |  TARGET_RESOURCE_REGION  | Cloudwatchダッシュボードで監視する対象のリソースのリージョン。省略した場合はap-northeast-1が自動的に設定されます。  |
     |  PROFILE  |  使用するプロファイル名。省略した場合はdefaultが自動的に設定されます。  |
     |  DASHBOARD_NAME  |  作成するCloudwatchダッシュボード名。  |
@@ -21,6 +21,14 @@
 3. AWSコンソールからCloudwatchを開き、環境変数`DASHBOARD_NAME`で指定したダッシュボードが作成されていることを確認してください。また、グラフの時刻が日本時間でない場合があります。その場合は下記のリンクを参考にタイムゾーンの設定を行なってください。
 
     [CloudWatch ダッシュボードの時間範囲またはタイムゾーン形式を変更する](https://docs.aws.amazon.com/ja_jp/AmazonCloudWatch/latest/monitoring/change_dashboard_time_format.html)
+
+4. 参考
+
+    |  リソース名  |  説明  |
+    | ---- | ---- |
+    | lambda | AWS Lambdaの監視用 |
+    | rds-mysql | AWS RDSのmysql監視用 |
+    | rds-postgresql | AWS RDSのpostgresql監視用 |
 
 <br />
 
